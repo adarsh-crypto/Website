@@ -509,3 +509,82 @@ footer p {
   text-align: center;
   margin: 0.25rem 0 0;
 }
+
+
+/* ==== Education with logos ==== */
+.edu-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 0.75rem;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  text-align: left;
+}
+.edu-item a {
+  color: #111827;
+  text-decoration: none;
+  border-bottom: 1px dashed rgba(0,0,0,0.25);
+}
+.edu-item a:hover { 
+  text-decoration: none;
+  border-bottom-color: #302d2c;
+}
+.edu-logo {
+  height: 28px;
+  width: auto;
+  border-radius: 4px;
+  object-fit: contain;
+  background: #fff;
+  padding: 2px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+}
+/* ==== Education Section Compact Fix ==== */
+#education {
+  height: auto;          /* shrink to fit content */
+  min-height: unset;
+  padding: 2rem 0;       /* balanced vertical spacing */
+}
+#education .education-container {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+}
+#education .details-container {
+  max-width: 900px;
+  padding: 1.5rem 2rem;
+  text-align: left;
+}
+.edu-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.edu-logo {
+  height: 32px;
+  width: auto;
+}
+
+/* ==== Education content alignment tweaks ==== */
+.edu-item {
+  align-items: center;       /* ensure logos and text align on the middle */
+  gap: 0.75rem;
+}
+.edu-item span {
+  display: inline-flex;
+  align-items: baseline;     /* keep degree + college on one baseline */
+  gap: 0.25rem;
+  flex-wrap: wrap;
+}
+.edu-item a {
+  text-decoration: none;     /* remove dashed underline */
+  border-bottom: none;
+}
+.edu-item a:hover {
+  text-decoration: underline; /* simple, clean hover */
+}
+.edu-logo {
+  height: 32px;              /* consistent logo height */
+  width: auto;
+}
